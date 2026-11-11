@@ -1,0 +1,34 @@
+OFF DUTY STUDENT WEBSITE — GITHUB UPLOAD GUIDE
+
+WHAT IS IN THIS FOLDER
+- index.html, app.js, styles.css, and favicon.svg: the website entry point and front-end code.
+- assets/: local banner and product photos used by the website.
+- .github/workflows/deploy.yml: automatically deploys the static website to GitHub Pages after a push to main.
+- .nojekyll: tells GitHub Pages to serve the files as-is.
+- README.md: project overview and local run notes.
+
+The responsive layout has desktop and mobile breakpoints in styles.css. The site is a static website; it has no server, account system, payment processor, or order fulfilment. Some editorial imagery still loads from Unsplash and needs internet access.
+
+MANUAL GITHUB PAGES STEPS
+1. Sign into the GitHub account you actually want to use. Its email can be different from your Codex account email.
+2. Create a new repository named something neutral, such as student-fashion-storefront-demo. Do not use OFF DUTY in the repository name or claim it is an official store.
+3. Choose visibility carefully. A GitHub Pages site is public on the internet. On GitHub Free, the repository must be public for Pages. Making a private repo does not make the published website private.
+4. Create the repository empty: do not add a README, license, or .gitignore since these files are already in this folder.
+5. Upload the CONTENTS of this folder into the repository root, so index.html is at the root beside app.js, styles.css, and assets/. Include hidden files and folders, especially .nojekyll and .github/workflows/deploy.yml. If the browser upload page hides dotfiles, use GitHub Desktop or create/upload those hidden files separately using their exact paths.
+6. Commit/push the uploaded files to the main branch.
+7. In the GitHub repo, open Settings > Pages and set Build and deployment > Source to GitHub Actions.
+8. Open the Actions tab and wait for “Deploy student storefront to GitHub Pages” to finish successfully. Open the published URL shown in the deployment summary. It usually looks like https://YOUR-USERNAME.github.io/REPOSITORY-NAME/.
+9. Check the published site on desktop and on a phone (or browser responsive mode). If changes are made later, push them to main to redeploy.
+
+BEFORE YOU MAKE THE REPOSITORY OR WEBSITE PUBLIC
+- This folder contains the OFF DUTY name/logo and reference product images, banners, screenshots, product names, and prices supplied for the project. A student-project label or disclaimer does not grant permission to use another party’s trademarks, logos, photos, screenshots, or catalog copy, and cannot guarantee you will avoid a claim.
+- Safest option: get written permission/licenses for all third-party branding and media, or replace them with a fictional brand and assets you created or are licensed to use. Keep proof of permissions and follow attribution/license conditions.
+- Do not imply the website is the official OFF DUTY store. The site already labels itself an unofficial student project and says it is not affiliated.
+- GitHub Pages websites are publicly reachable, even when the source repository is private on an eligible paid plan. Anyone can copy files from a public repository. Do not upload private information, passwords, API keys, school/personal documents, or customer data.
+- Keep checkout, payment, and order-processing features disabled unless you have authorization and a compliant secure backend. This project currently has no real payment or order processing.
+- If your assignment requires a public link, ask your instructor whether a private submission or a rebranded version is acceptable before publishing third-party assets.
+- For legal certainty about the specific images, marks, and jurisdiction, get permission from the rights holders or consult a qualified lawyer. This checklist is practical risk-reduction guidance, not legal advice or a guarantee.
+
+REFERENCE
+GitHub Pages publishing and visibility rules: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+India Copyright Office, Copyright Act Section 52 exceptions: https://copyright.gov.in/Exceptions.aspx/FORMXV/FORMXV/Society/Documents/Documents/WaitingApplicationsForObjection.aspx
